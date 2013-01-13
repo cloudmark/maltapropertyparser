@@ -31,8 +31,7 @@ Maximum Rental Price for the property:
     ctl00$ddlRentalMaxPrice:0
     RentalMaxPrice:
 
-
-Insert this for type
+These are the available types.  
 * 579  Apartments
 * 7943 Boathouse
 * 7944 Bungalows
@@ -46,6 +45,7 @@ Insert this for type
 * 584 Terraced Houses
 * 7945 Townhouses
 * 585 Villas
+
 
     ctl00$ddlPropertyType:584
     PropertyType:584

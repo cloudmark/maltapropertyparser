@@ -13,23 +13,23 @@ Remax Parser
 
 Minimum Price for the property: 
 
-  ctl00$ddlMinPrice:10000 
-  MinPrice:10000
+    ctl00$ddlMinPrice:10000 
+    MinPrice:10000
 
 Maximum Price for the property: 
 
-  ctl00$ddlMaxPrice:0
-  MaxPrice:
+    ctl00$ddlMaxPrice:0
+    MaxPrice:
 
 Minimum Rental Price for the property: 
 
-  ctl00$ddlRentalMinPrice:0
-  RentalMinPrice:
+    ctl00$ddlRentalMinPrice:0
+    RentalMinPrice:
 
 Maximum Rental Price for the property: 
 
-  ctl00$ddlRentalMaxPrice:0
-  RentalMaxPrice:
+    ctl00$ddlRentalMaxPrice:0
+    RentalMaxPrice:
 
 
 Insert this for type
@@ -47,27 +47,27 @@ Insert this for type
 * 7945 Townhouses
 * 585 Villas
 
-  ctl00$ddlPropertyType:584
-  PropertyType:584
+    ctl00$ddlPropertyType:584
+    PropertyType:584
 
 
 Minimum number of bedrooms: 
 
-  ctl00$ddlMinNumOfBedrooms:3
-  MinNumOfBedrooms:3
+    ctl00$ddlMinNumOfBedrooms:3
+    MinNumOfBedrooms:3
 
 The transaction type for the property it is set to  'For Sale':
   
-  ctl00$ddlTransactionTypeUID:261
-  TransactionTypeUID:261
+    ctl00$ddlTransactionTypeUID:261
+    TransactionTypeUID:261
 
 Additional Properties: 
 
-  ComRes:2
-  ctl00$ddlComRes:2
-  ctl00$ComResGroup:2
+    ComRes:2
+    ctl00$ddlComRes:2
+    ctl00$ComResGroup:2
 
-  ctl00$btnSearch:Search Again
+    ctl00$btnSearch:Search Again
 
 
 Frank Salt Parser

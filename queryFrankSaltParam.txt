@@ -1,0 +1,41 @@
+styid:1
+iscom:false
+mtyid:1
+
+# Type of property
+# -1  Any Type
+# 16  Airspace
+# 6   Apartment
+# 14  Block of Apartments
+# 9   Bungalow
+# 4   Farmhouse
+# 13  Garage
+# 3   House of Character
+# 8   Maisonette 
+# 15  Palazzo 
+# 7   Penthouse
+# 2   Plot 
+# 1   Site
+# 30  Terraced House
+# 5   Town House
+# 10  Villa
+# 12  Commercial
+typid:10
+
+# The location.  
+locid:-1
+
+curid:EUR
+# The price.  
+prcfr:-1
+prcto:450000
+
+avidt:
+
+# Number of meters square the property will have.  
+areafr:0
+areato:-1
+
+#ctl00$smMainScriptManager:
+#ctl00$content$ddlSort:price-low-to-high:
+#ctl00$content$gvpDataPager$btnNext:>

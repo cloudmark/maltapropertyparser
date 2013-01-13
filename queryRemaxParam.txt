@@ -1,0 +1,41 @@
+ctl00$ddlMinPrice:10000
+MinPrice:10000
+
+ctl00$ddlMaxPrice:0
+MaxPrice:
+
+ctl00$ddlRentalMinPrice:0
+RentalMinPrice:
+
+ctl00$ddlRentalMaxPrice:0
+RentalMaxPrice:
+
+# Insert this for type
+# 579  Apartments</option>
+# 7943 Boathouse</option>
+# 7944 Bungalows</option>
+# 7947 Farmhouses</option>
+# 582 Garage/Parking Facilities</option>
+# 581 House of Character</option>
+# 583 Land</option>
+# 580 Maisonettes</option>
+# 7951 Manor/Palace/Castle</option>
+# 7952 Penthouses</option>
+# 584 Terraced Houses</option>
+# 7945 Townhouses</option>
+# 585 Villas</option>
+ctl00$ddlPropertyType:584
+PropertyType:584
+
+ComRes:2
+ctl00$ddlComRes:2
+ctl00$ComResGroup:2
+
+ctl00$ddlMinNumOfBedrooms:3
+MinNumOfBedrooms:3
+
+# The transaction type is set For Sale
+ctl00$ddlTransactionTypeUID:261
+TransactionTypeUID:261
+
+ctl00$btnSearch:Search Again

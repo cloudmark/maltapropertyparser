@@ -45,6 +45,7 @@ These are the available types.
 * 584 Terraced Houses
 * 7945 Townhouses
 * 585 Villas
+Set the properties here
 
 
     ctl00$ddlPropertyType:584

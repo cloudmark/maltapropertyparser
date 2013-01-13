@@ -11,19 +11,19 @@ ctl00$ddlRentalMaxPrice:0
 RentalMaxPrice:
 
 # Insert this for type
-# 579  Apartments</option>
-# 7943 Boathouse</option>
-# 7944 Bungalows</option>
-# 7947 Farmhouses</option>
-# 582 Garage/Parking Facilities</option>
-# 581 House of Character</option>
-# 583 Land</option>
-# 580 Maisonettes</option>
-# 7951 Manor/Palace/Castle</option>
-# 7952 Penthouses</option>
-# 584 Terraced Houses</option>
-# 7945 Townhouses</option>
-# 585 Villas</option>
+# 579  Apartments
+# 7943 Boathouse
+# 7944 Bungalows
+# 7947 Farmhouses
+# 582 Garage/Parking Facilities
+# 581 House of Character
+# 583 Land
+# 580 Maisonettes
+# 7951 Manor/Palace/Castle
+# 7952 Penthouses
+# 584 Terraced Houses
+# 7945 Townhouses
+# 585 Villas
 ctl00$ddlPropertyType:584
 PropertyType:584
 

@@ -20,7 +20,7 @@ mtyid:1
 # 5   Town House
 # 10  Villa
 # 12  Commercial
-typid:10
+typid:-1
 
 # The location.  
 locid:-1

@@ -1,9 +1,11 @@
 #!/bin/bash
 TEMP_DIR=./temp/franksalt
 COOKIE_DIR=./temp/franksalt/cookies
+DATA_FILE='data.csv'
 rm -rf $TEMP_DIR
 mkdir -p $TEMP_DIR
 mkdir -p $COOKIE_DIR
+
 
 # Determine whether there are any more results.  
 # @return NEXT variable.  
@@ -65,6 +67,22 @@ function grabPage {
 	
 }
 
+function grabIndividualResults {
+	TEMP_FILE=$1
+	PAGE=$2
+	# Now grab all the page references.
+	for reference in `cat "$TEMP_FILE" | grep -o "viewProperty(.*)" | tr -Cd [0-9'\n'] | awk '/[0-9]+/ {print $1}' | sort | uniq` 
+	do 
+		# Retrieve the page so that it can be easily parsed.   
+		PAGE_FILE="$TEMP_DIR/page_$reference.html"
+		echo -e "\t Reference: [$reference] from File: [$TEMP_FILE] Page File: [$PAGE_FILE]"
+		curl -s "www.franksalt.com.mt/Search/PropertyDetails.aspx?id=$reference" > $PAGE_FILE
+		# Now parse the page using python.  
+		python parseFrankSaltPage.py "$PAGE_FILE" "$PAGE" "$reference" >> "$DATA_FILE"
+	done
+
+}
+
 function grabUrl {
 	PAGE=$1
 	QUERY_STRING=$2
@@ -110,6 +128,10 @@ PAGE="1"
 # Grab the first page.  
 grabPage "$PAGE"
 moreResults
+if [ $NEXT -ne 0 ]
+then 
+	grabIndividualResults "$TEMP_FILE" "$PAGE"
+fi
 
 while [ $NEXT -ne 0 ]
 do
@@ -118,4 +140,10 @@ do
 	echo ""
 	grabPage "$PAGE"
 	moreResults
+	
+	if [ $NEXT -ne 0 ]
+	then 
+		grabIndividualResults "$TEMP_FILE" "$PAGE"
+	fi
+	
 done

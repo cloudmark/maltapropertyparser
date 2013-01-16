@@ -24,6 +24,7 @@ do
 		
 		echo "" > $TEMP_FILE
 		echo "Created Temp File: $TEMP_FILE"
+		echo "URL: http://www.maltapark.com/property/search.aspx?$QUERY_PARAM&searchcat=s3&sortby=2&page=$PAGE"
 		curl -s "http://www.maltapark.com/property/search.aspx?$QUERY_PARAM&searchcat=s3&sortby=2&page=$PAGE" > $TEMP_FILE
 		tidy -f errs.txt -m $TEMP_FILE
 

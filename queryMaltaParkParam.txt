@@ -1,0 +1,112 @@
+# Since Maltapark is non structured data we use heuristics. Note the list of types is just using word matching.
+# So you might get false positives in your results.    
+[Properties]
+Type=Terrace,Terraced House
+MinPrice=10000
+MaxPrice=350000
+MinNumOfBedrooms=3
+
+# The type of the house we will put in the CSV file
+TypeCSV=terraced house
+
+
+[Locations]
+include=
+	Attard
+	Bahar ic-Caghaq
+	Bahrija
+	Balzan
+	Bidnija
+	Birguma
+	Birkirkara
+	Birzebuggia
+	Blata l-Bajda
+	Bugibba
+	Burmarrad
+	Buskett
+	Cospicua
+	Dingli
+	Dwejra
+	Fgura
+	Fleur-de-Lys
+	Floriana
+	Fontana
+	Fort Cambridge
+	Fort Chambray
+	Ghajn Tuffieha
+	Gharghur
+	Ghaxaq
+	Gnejna
+	Gudja
+	Gwardamangia
+	Gzira
+	Hal-Saghtrija
+	Hal-Far
+	Hamrun
+	Kalkara
+	Kappara
+	Kempinski
+	Kirkop
+	Iklin
+	Lija
+	Luqa
+	Madliena
+	Maghtab
+	Manikata
+	Marsa
+	Marsascala
+	Marsaxlokk
+	Mdina
+	Mellieha
+	Mgarr
+	Mosta
+	Mqabba
+	Mriehel
+	Msida
+	Mtahleb
+	Mtarfa
+	Naxxar
+	Paceville
+	Paola
+	Pembroke
+	Pender Gardens
+	Pieta
+	Portomaso
+	Qawra
+	Qormi
+	Qrendi
+	Rabat
+	Safi
+	Salina
+	San Gwann
+	San Pawl tat-Targa
+	Sannat - Gozo
+	Santa Lucia
+	Santa Venera
+	Selmun
+	Senglea
+	Siggiewi
+	Sliema
+	St. Andrews
+	St. Angelo Mansions
+	St. Julians
+	St. Pauls Bay
+	Swatar
+	Swieqi
+	Ta Monita
+	Ta' Qali
+	Ta' Xbiex
+	Ta' l-Ibragg
+	Tarxien
+	Tas Sellum
+	Tigne Point
+	Valletta
+	Vittoriosa
+	Wardija
+	Xemxija
+	Xghajra
+	Zabbar
+	Zebbiegh
+	Zebbug
+	Zejtun
+	Zurrieq

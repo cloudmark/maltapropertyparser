@@ -7,4 +7,7 @@ remax:
 franksalt: 
 	./grabFrankSaltPage.sh
 
-refresh: cleanall remax franksalt
+maltapark: 
+	./grabMaltaParkPages.sh
+
+refresh: cleanall remax franksalt maltapark

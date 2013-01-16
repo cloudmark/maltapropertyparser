@@ -1,5 +1,6 @@
 cleanall: 
 	rm -rf data.csv
+	touch data.csv
 
 remax: 
 	./grabRemaxPage.sh
@@ -7,4 +8,7 @@ remax:
 franksalt: 
 	./grabFrankSaltPage.sh
 
-refresh: cleanall remax franksalt
+maltapark: 
+	./grabMaltaParkPages.sh
+
+refresh: cleanall remax franksalt maltapark

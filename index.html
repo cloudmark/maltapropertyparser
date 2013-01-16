@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Maltapropertyparser by cloudmark</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Maltapropertyparser</h1>
+        <p>A collection of parsers for the Maltese Property Market.  </p>
+
+        <p class="view"><a href="https://github.com/cloudmark/maltapropertyparser">View the Project on GitHub <small>cloudmark/maltapropertyparser</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/cloudmark/maltapropertyparser/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/cloudmark/maltapropertyparser/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/cloudmark/maltapropertyparser">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Property Parser</h1>
+
+<h1>Introduction</h1>
+
+<p>A set of property parsers to compare the market, the following parsers are implemented: </p>
+
+<ul>
+<li>Remax Parser</li>
+<li>Frank Salt Parser (in progress)</li>
+</ul><h1>Remax Parser Parameters</h1>
+
+<p>Minimum Price for the property: </p>
+
+<pre><code>ctl00$ddlMinPrice:10000 
+MinPrice:10000
+</code></pre>
+
+<p>Maximum Price for the property: </p>
+
+<pre><code>ctl00$ddlMaxPrice:0
+MaxPrice:
+</code></pre>
+
+<p>Minimum Rental Price for the property: </p>
+
+<pre><code>ctl00$ddlRentalMinPrice:0
+RentalMinPrice:
+</code></pre>
+
+<p>Maximum Rental Price for the property: </p>
+
+<pre><code>ctl00$ddlRentalMaxPrice:0
+RentalMaxPrice:
+</code></pre>
+
+<p>These are the available types.  </p>
+
+<ul>
+<li>579  Apartments</li>
+<li>7943 Boathouse</li>
+<li>7944 Bungalows</li>
+<li>7947 Farmhouses</li>
+<li>582 Garage/Parking Facilities</li>
+<li>581 House of Character</li>
+<li>583 Land</li>
+<li>580 Maisonettes</li>
+<li>7951 Manor/Palace/Castle</li>
+<li>7952 Penthouses</li>
+<li>584 Terraced Houses</li>
+<li>7945 Townhouses</li>
+<li>585 Villas</li>
+</ul><p>Set the properties here</p>
+
+<pre><code>ctl00$ddlPropertyType:584
+PropertyType:584
+</code></pre>
+
+<p>Minimum number of bedrooms: </p>
+
+<pre><code>ctl00$ddlMinNumOfBedrooms:3
+MinNumOfBedrooms:3
+</code></pre>
+
+<p>The transaction type for the property it is set to  'For Sale':</p>
+
+<pre><code>ctl00$ddlTransactionTypeUID:261
+TransactionTypeUID:261
+</code></pre>
+
+<p>Additional Properties: </p>
+
+<pre><code>ComRes:2
+ctl00$ddlComRes:2
+ctl00$ComResGroup:2
+
+ctl00$btnSearch:Search Again
+</code></pre>
+
+<h1>Frank Salt Parser Parameters</h1>
+
+<p>Site Identifier - Always 1</p>
+
+<pre><code>styid:1
+iscom:false
+mtyid:1
+</code></pre>
+
+<p>Type of property</p>
+
+<ul>
+<li>-1  Any Type</li>
+<li>16  Airspace</li>
+<li>6   Apartment</li>
+<li>14  Block of Apartments</li>
+<li>9   Bungalow</li>
+<li>4   Farmhouse</li>
+<li>13  Garage</li>
+<li>3   House of Character</li>
+<li>8   Maisonette </li>
+<li>15  Palazzo </li>
+<li>7   Penthouse</li>
+<li>2   Plot </li>
+<li>1   Site</li>
+<li>30  Terraced House</li>
+<li>5   Town House</li>
+<li>10  Villa</li>
+<li><p>12  Commercial
+typid:30</p></li>
+<li><p>The location.  </p></li>
+<li><p>-1 Any Locality   </p></li>
+<li><p>1 Attard    </p></li>
+<li><p>2 Bahar ic-Caghaq   </p></li>
+<li><p>3 Bahrija    </p></li>
+<li><p>4 Balzan    </p></li>
+<li><p>5 Bidnija    </p></li>
+<li><p>6 Birguma    </p></li>
+<li><p>7 Birkirkara    </p></li>
+<li><p>8 Birzebuggia    </p></li>
+<li><p>9 Blata l-Bajda   </p></li>
+<li><p>10 Bugibba    </p></li>
+<li><p>11 Burmarrad    </p></li>
+<li><p>116 Buskett    </p></li>
+<li><p>12 Cospicua    </p></li>
+<li><p>13 Dingli    </p></li>
+<li><p>14 Dwejra    </p></li>
+<li><p>15 Dwejra - Gozo  </p></li>
+<li><p>16 Fgura    </p></li>
+<li><p>17 Fleur-de-Lys    </p></li>
+<li><p>18 Floriana    </p></li>
+<li><p>127 Fontana    </p></li>
+<li><p>20 Fort Cambridge   </p></li>
+<li><p>19 Fort Chambray   </p></li>
+<li><p>21 Ghajn Tuffieha   </p></li>
+<li><p>22 Ghajnsielem - Gozo  </p></li>
+<li><p>23 Gharb - Gozo  </p></li>
+<li><p>24 Gharghur    </p></li>
+<li><p>25 Ghasri - Gozo  </p></li>
+<li><p>26 Ghaxaq    </p></li>
+<li><p>27 Gnejna    </p></li>
+<li><p>-1000 Gozo    </p></li>
+<li><p>29 Gudja    </p></li>
+<li><p>30 Gwardamangia    </p></li>
+<li><p>31 Gzira    </p></li>
+<li><p>32 Hal Saghtrija   </p></li>
+<li><p>33 Hal-Far    </p></li>
+<li><p>34 Hamrun    </p></li>
+<li><p>35 Kalkara    </p></li>
+<li><p>36 Kappara    </p></li>
+<li><p>37 Kempinski    </p></li>
+<li><p>38 Kercem - Gozo  </p></li>
+<li><p>39 Kirkop    </p></li>
+<li><p>41 L'Iklin    </p></li>
+<li><p>40 Lija    </p></li>
+<li><p>42 Luqa    </p></li>
+<li><p>43 Madliena    </p></li>
+<li><p>44 Maghtab    </p></li>
+<li><p>45 Manikata    </p></li>
+<li><p>46 Marsa    </p></li>
+<li><p>47 Marsalforn - Gozo  </p></li>
+<li><p>48 Marsascala    </p></li>
+<li><p>49 Marsaxlokk    </p></li>
+<li><p>50 Mdina    </p></li>
+<li><p>51 Mellieha    </p></li>
+<li><p>52 Mgarr    </p></li>
+<li><p>53 Mgarr - Gozo  </p></li>
+<li><p>54 Mosta    </p></li>
+<li><p>55 Mqabba    </p></li>
+<li><p>56 Mriehel    </p></li>
+<li><p>57 Msida    </p></li>
+<li><p>58 Mtahleb    </p></li>
+<li><p>59 Mtarfa    </p></li>
+<li><p>60 Munxar - Gozo  </p></li>
+<li><p>61 Nadur - Gozo  </p></li>
+<li><p>62 Naxxar    </p></li>
+<li><p>63 Paceville    </p></li>
+<li><p>64 Paola    </p></li>
+<li><p>65 Pembroke    </p></li>
+<li><p>66 Pender Gardens   </p></li>
+<li><p>67 Pieta    </p></li>
+<li><p>68 Portomaso    </p></li>
+<li><p>69 Qala - Gozo  </p></li>
+<li><p>70 Qawra    </p></li>
+<li><p>71 Qormi    </p></li>
+<li><p>72 Qrendi    </p></li>
+<li><p>73 Rabat    </p></li>
+<li><p>74 Safi    </p></li>
+<li><p>75 Salina    </p></li>
+<li><p>76 San Blass - Gozo </p></li>
+<li><p>77 San Gwann   </p></li>
+<li><p>78 San Lawrenz - Gozo </p></li>
+<li><p>79 San Pawl tat-Targa  </p></li>
+<li><p>80 Sannat - Gozo  </p></li>
+<li><p>81 Santa Lucia   </p></li>
+<li><p>82 Santa Lucija - Gozo </p></li>
+<li><p>83 Santa Venera   </p></li>
+<li><p>84 Selmun    </p></li>
+<li><p>85 Senglea    </p></li>
+<li><p>86 Siggiewi    </p></li>
+<li><p>87 Sliema    </p></li>
+<li><p>88 St. Andrews   </p></li>
+<li><p>89 St. Angelo Mansions  </p></li>
+<li><p>90 St. Julians   </p></li>
+<li><p>91 St. Pauls Bay  </p></li>
+<li><p>92 Swatar    </p></li>
+<li><p>93 Swieqi    </p></li>
+<li><p>95 Ta Monita   </p></li>
+<li><p>96 Ta' Qali   </p></li>
+<li><p>97 Ta' Xbiex   </p></li>
+<li><p>94 Ta' l-Ibragg   </p></li>
+<li><p>98 Tarxien    </p></li>
+<li><p>99 Tas Sellum   </p></li>
+<li><p>100 Tigne Point   </p></li>
+<li><p>101 Valletta    </p></li>
+<li><p>102 Victoria - Gozo  </p></li>
+<li><p>103 Vittoriosa    </p></li>
+<li><p>104 Wardija    </p></li>
+<li><p>105 Xaghra - Gozo  </p></li>
+<li><p>106 Xemxija    </p></li>
+<li><p>107 Xewkija - Gozo  </p></li>
+<li><p>108 Xghajra    </p></li>
+<li><p>109 Xlendi - Gozo  </p></li>
+<li><p>110 Zabbar    </p></li>
+<li><p>111 Zebbiegh    </p></li>
+<li><p>112 Zebbug    </p></li>
+<li><p>113 Zebbug - Gozo  </p></li>
+<li><p>114 Zejtun    </p></li>
+<li><p>115 Zurrieq    </p></li>
+</ul><p>Set the properties here</p>
+
+<pre><code>locid:-1
+</code></pre>
+
+<p>The price range for the property.  </p>
+
+<pre><code>curid:EUR
+prcfr:-1
+prcto:450000
+avidt:
+</code></pre>
+
+<p>The Number of meters square the property will have.  </p>
+
+<pre><code>areafr:0
+areato:-1
+</code></pre>
+
+<p>Default Parameters</p>
+
+<pre><code>ctl00$smMainScriptManager:
+ctl00$content$ddlSort:price-low-to-high:
+ctl00$content$gvpDataPager$btnNext:&gt;
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/cloudmark">cloudmark</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>

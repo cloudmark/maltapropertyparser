@@ -1,9 +1,8 @@
 #!/bin/bash
-TEMP_DIR=./temp/remax
+TEMP_DIR=./temp/maltapark
 DATA_FILE="data.csv"
 rm -rf $TEMP_DIR
 mkdir -p $TEMP_DIR
-
 IFS=$(echo -en "\n\b")
 for QUERY in `cat queryMaltaParkParam.txt  | grep -E -o "Type=(.*)" | awk -F = '{print $2}' | sed -E 's/,/\'$'\n/g'`
 do
@@ -45,7 +44,9 @@ do
 					cat "$SECTION_FILE""_bak" | grep -v "DOCTYPE" | tr -d "\r"  > "$SECTION_FILE"
 					rm -rf "$SECTION_FILE""_bak"
 					DATA=`python parseMaltaParkPage.py "$SECTION_FILE" "$PAGE" "$SECTION_ID"`
-					echo $DATA >> "$DATA_FILE"
+					if [ "$DATA" != "" ]; then
+						echo "$DATA" >> "$DATA_FILE"
+					fi
 				else
 					echo -e "\t Parsing Property: [$SECTION_ID] -> Duplicate Entry Found.  "
 				fi

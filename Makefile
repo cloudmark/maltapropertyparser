@@ -1,5 +1,6 @@
 cleanall: 
 	rm -rf data.csv
+	touch data.csv
 
 remax: 
 	./grabRemaxPage.sh

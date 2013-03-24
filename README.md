@@ -100,7 +100,7 @@ Type of property
 * 12  Commercial
 typid:30
 
-* The location.  
+The location.  
 * -1 Any Locality   
 * 1 Attard    
 * 2 Bahar ic-Caghaq   
@@ -219,7 +219,6 @@ typid:30
 * 113 Zebbug - Gozo  
 * 114 Zejtun    
 * 115 Zurrieq    
-
 
 Set the properties here
 

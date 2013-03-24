@@ -1,41 +1,86 @@
-ctl00$ddlMinPrice:10000
-MinPrice:10000
-
-ctl00$ddlMaxPrice:0
-MaxPrice:
-
-ctl00$ddlRentalMinPrice:0
-RentalMinPrice:
-
-ctl00$ddlRentalMaxPrice:0
-RentalMaxPrice:
-
-# Insert this for type
-# 579  Apartments
-# 7943 Boathouse
-# 7944 Bungalows
-# 7947 Farmhouses
-# 582 Garage/Parking Facilities
-# 581 House of Character
-# 583 Land
-# 580 Maisonettes
-# 7951 Manor/Palace/Castle
-# 7952 Penthouses
-# 584 Terraced Houses
-# 7945 Townhouses
-# 585 Villas
-ctl00$ddlPropertyType:584
-PropertyType:584
-
+ctl00%24listingListScriptManager:ctl00%24listingListScriptManager%7Cctl00%24btnLLSubmit
+__EVENTTARGET:
+__EVENTARGUMENT:
+__VIEWSTATE:%2FwEPDwULLTEzMjQyNDg3MjlkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYNBTBjdGwwMCR1Y1B1YmxpY0xpc3RpbmdTZWFyY2hDcml0ZXJpYSRpbWdidG5TdWJtaXQFOmN0bDAwJHVjUHVibGljTGlzdGluZ1NlYXJjaENyaXRlcmlhJGRkbFRyYW5zYWN0aW9uVHlwZVNhbGUFOmN0bDAwJHVjUHVibGljTGlzdGluZ1NlYXJjaENyaXRlcmlhJGRkbFRyYW5zYWN0aW9uVHlwZVJlbnQFOGN0bDAwJHVjUHVibGljTGlzdGluZ1NlYXJjaENyaXRlcmlhJHJkb0NvbVJlc1Jlc2lkZW50aWFsBTdjdGwwMCR1Y1B1YmxpY0xpc3RpbmdTZWFyY2hDcml0ZXJpYSRyZG9Db21SZXNDb21tZXJjaWFsBT1jdGwwMCR1Y1B1YmxpY0xpc3RpbmdTZWFyY2hDcml0ZXJpYSRHZW9TZWxlY3Rpb24kZGRsTG9jYWxab25lBTBjdGwwMCR1Y1B1YmxpY0xpc3RpbmdTZWFyY2hDcml0ZXJpYSRjaGtib3hBY3RpdmUFLWN0bDAwJHVjUHVibGljTGlzdGluZ1NlYXJjaENyaXRlcmlhJE9wZW5Ib3VzZQUuY3RsMDAkdWNQdWJsaWNMaXN0aW5nU2VhcmNoQ3JpdGVyaWEkT25TYWxlT25seQU3Y3RsMDAkdWNQdWJsaWNMaXN0aW5nU2VhcmNoQ3JpdGVyaWEkcmRvTGlzdGluZ3NBZGRlZERheQU4Y3RsMDAkdWNQdWJsaWNMaXN0aW5nU2VhcmNoQ3JpdGVyaWEkcmRvTGlzdGluZ3NBZGRlZFdlZWsFOWN0bDAwJHVjUHVibGljTGlzdGluZ1NlYXJjaENyaXRlcmlhJHJkb0xpc3RpbmdzQWRkZWRNb250aAU3Y3RsMDAkdWNQdWJsaWNMaXN0aW5nU2VhcmNoQ3JpdGVyaWEkcmRvTGlzdGluZ3NBZGRlZEFsbFopypLR0bf32w2BSYYvQvh4P7Oq
+ctl00%24ucLanguageSelector%24ddlSelectLanguage:
+myState:0
+myStateCurrency:0
+MLSID:
 ComRes:2
-ctl00$ddlComRes:2
-ctl00$ComResGroup:2
+Street:
+Zip3:
+RadiusPostalCode:
+SearchType:RadiusPC
+RentalMinPrice:
+RentalMaxPrice:
+AvailabilityDate:
+priceTypeUID:
+PropertyCategory:
+MarketStatusUID:
+Development:
+Currency:EUR
+SqMeter:
+TotalNumOfRooms:
+FloorLevel:
+EnergyRatings:
+chkActive:
+chkOpenHouse:
+chkOnSaleOnly:0
+ListingsAdded:All
+ctl00%24ucPublicListingSearchCriteria%24txtMLSID:Search%20By%20MLS%20ID
+ctl00%24ucPublicListingSearchCriteria%24ddlTransactionType:For%20Sale
+TransactionType:For%20Sale
+ctl00%24ucPublicListingSearchCriteria%24rdoComRes:2
+ctl00%24ucPublicListingSearchCriteria%24GeoSelection%24ddlSearchRemaxRegion:24
+SearchRemaxRegionID:24
+ctl00%24ucPublicListingSearchCriteria%24GeoSelection%24ddlSearchRemaxRegionOverride:24
+RegionRowId:0
+ctl00%24ucPublicListingSearchCriteria%24GeoSelection%24ddlProvince:0
+ProvinceId:0
+ctl00%24ucPublicListingSearchCriteria%24GeoSelection%24ddlCity:0
+CityId:0
+GeoInfoCountryID:24
 
-ctl00$ddlMinNumOfBedrooms:3
+# Property Type
+PropertyType:580
+ctl00%24ucPublicListingSearchCriteria%24ddlPropertyType:580
+
+# Minimum Number of Bedrooms 
 MinNumOfBedrooms:3
+ctl00%24ucPublicListingSearchCriteria%24ddlMinNumOfBedrooms:3
 
-# The transaction type is set For Sale
-ctl00$ddlTransactionTypeUID:261
-TransactionTypeUID:261
 
-ctl00$btnSearch:Search Again
+# Minimum Price 
+MinPrice:5000
+ctl00%24ucPublicListingSearchCriteria%24ddlMinPrice:5000
+
+# Maximum Price 
+MaxPrice:
+ctl00%24ucPublicListingSearchCriteria%24ddlMaxPrice:-1
+
+ctl00%24ucPublicListingSearchCriteria%24ddlCommPropertyType:
+ctl00%24ucPublicListingSearchCriteria%24ddlCurrency:EUR
+ctl00%24ucPublicListingSearchCriteria%24ddlRentalMinPrice:-1
+ctl00%24ucPublicListingSearchCriteria%24ddlRentalMaxPrice:-1
+ctl00%24ucPublicListingSearchCriteria%24ddlTotalNumOfRooms:
+ctl00%24ucPublicListingSearchCriteria%24ddlMinSqMeters:
+ctl00%24ucPublicListingSearchCriteria%24ddlFloorLevel:
+ctl00%24ucPublicListingSearchCriteria%24ddlmarketStatus:
+ctl00%24ucPublicListingSearchCriteria%24ddlDevelopmentsAS:
+ctl00%24ucPublicListingSearchCriteria%24ddlPropertyCategory:
+ctl00%24ucPublicListingSearchCriteria%24rdoListingsAdded:All
+ctl00%24ctl02%24txtName:
+ctl00%24ctl02%24txtEmailAddress:
+ctl00%24rdoSortBy:PriceIncreasing
+ListingsAddedChange:
+TotalRecordCount:1109
+CurrentPage:1
+hiddenGoto:
+SortBy:PriceIncreasing
+LLView:ListView
+CriteriaChanged:
+ctl01%24txtName:
+ctl01%24txtEmailAddress:
+__ASYNCPOST:true
+ctl00%24btnLLSubmit:Search
+

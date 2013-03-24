@@ -15,7 +15,7 @@ do
 	echo "Created Temp File: $TEMP_FILE"
 	cp queryRemaxParam.txt $TEMP_FILE
 	QUERY_STRING=`cat $TEMP_FILE | sed '/^$/d' | grep -v "#" | tr '\r\n' '&' | tr ':' '='`
-	curl -s --data "$QUERY_STRING" "http://www.remax-malta.com/PublicListingList.aspx?results=1&searchAgain=true&CurrentPage=$PAGE" > $TEMP_FILE
+	curl -s --data "$QUERY_STRING" "http://www.remax-malta.com/PublicListingList.aspx?CurrentPage=$PAGE" > $TEMP_FILE
 	tidy -f errs.txt -m $TEMP_FILE
 	NEXT=`cat ./temp/remax/temp_$PAGE.html | grep -o "proplist_address" | wc -l | tr -dC [0-9]`
 	echo "More Results: [$NEXT]"

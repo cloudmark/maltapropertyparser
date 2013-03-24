@@ -20,11 +20,11 @@ def clean_postcode(str):
 
 
 doc = lxml.html.parse(sys.argv[1])
-results = doc.xpath('//*[@class="proplist_tbl"]')
+results = doc.xpath('//*[@class="box-generic listing-list"]')
 for result in results: 
     property_element=result.xpath(".//td[@class='proplist_address']/a")
     price_element=result.xpath(".//a[@class='proplist_price']")
-    type_element=result.xpath(".//span[@class='proplist_features']")
+    type_element=result.xpath(".//div[@class='listinglist-proptype']")
     agent_element=result.xpath(".//a[@class='listinglist_agentname']")
     property_url= "www.remax-malta.com" + property_element[0].attrib.get('href')
     property_location=clean_postcode(property_element[0].text)
@@ -38,5 +38,5 @@ for result in results:
         line += "NA,"
     line += clean_string(agent_element[0].text_content()) + ","
     line += clean_string(agent_element[0].attrib.get('href')) + ","
-    line += clean_string(type_element[0].text_content())
+    line += clean_string(type_element[0].text_content().replace("-",""))
     print smart_str(line)

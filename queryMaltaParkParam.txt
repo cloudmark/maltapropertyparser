@@ -1,13 +1,13 @@
 # Since Maltapark is non structured data we use heuristics. Note the list of types is just using word matching.
 # So you might get false positives in your results.    
 [Properties]
-Type=Terrace,Terraced House, terracedhouse, terraced houses
+Type=apartment,penthouse,terraced,view,corner
 MinPrice=10000
 MaxPrice=350000
 MinNumOfBedrooms=3
 
 # The type of the house we will put in the CSV file
-TypeCSV=terraced house
+TypeCSV=appartment
 
 
 [Locations]
